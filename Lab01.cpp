@@ -22,8 +22,7 @@ int main()
 
 	string theFileName = "NotaValidFileName$$$%%%_###"; //default filename for the while-loop to have true false conditions
 	ifstream theFile(theFileName);
-	double a;											//for later use when we only want to read out double values from our file
-	double firstNum;
+	double a;											//for later use when we only want to read out double values from our file	double firstNum;
 	double firstNum2;
 	double lastNum;
 	double lastNum2;
@@ -59,7 +58,7 @@ int main()
 		{
 			firstNum = a;			//setting the firstNum equal to the first double found in the file
 		}
-		else if((theFile >> a) && (count == 0)){
+		else if((theFile >> a) && (count == 1)){
 			firstNum2 = a;
 		}
 		else
