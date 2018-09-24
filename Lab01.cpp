@@ -1,4 +1,5 @@
-﻿// Lab01.cpp : Defines the entry point for the console application.
+
+// Lab01.cpp : Defines the entry point for the console application.
 //
 
 ///#include "pch.h"
@@ -23,7 +24,9 @@ int main()
 	ifstream theFile(theFileName);
 	double a;											//for later use when we only want to read out double values from our file
 	double firstNum;
+	double firstNum2;
 	double lastNum;
+	double lastNum2;
 	int count = -1;				//keeps a count of the amount of doubles the prgram comes across in a given file
 
 	//----------------------BEGIN TESTING IF THE FILE IS OPENABLE---------------------------------------------------------------------------------------------
@@ -55,6 +58,9 @@ int main()
 		if ((theFile >> a) && (count == 0))												//Logic telling the program to only care about doubles, and to record the first double it comes across
 		{
 			firstNum = a;			//setting the firstNum equal to the first double found in the file
+		}
+		else if((theFile >> a) && (count == 0)){
+			firstNum2 = a;
 		}
 		else
 		{
