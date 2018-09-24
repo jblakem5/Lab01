@@ -1,7 +1,7 @@
 ﻿// Lab01.cpp : Defines the entry point for the console application.
 //
 
-//#include "pch.h"
+///#include "pch.h"
 
 #include <iostream>
 #include <fstream>
